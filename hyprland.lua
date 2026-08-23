@@ -1,0 +1,13 @@
+require("modules/animations")
+require("modules/monitor")
+require("modules/keybinds")
+require("modules/input")
+require("modules/environment")
+
+hl.on("hyprland.start", function ()
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("swaync")
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("hyprsunset")
+end)
