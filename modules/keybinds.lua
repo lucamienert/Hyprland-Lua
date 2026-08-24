@@ -41,9 +41,6 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("pactl set-sink-mute @DEFAULT_SINK@ tog
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("hyprctl hyprsunset gamma +10"))
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("hyprctl hyprsunset gamma -10"))
 
-hl.bind("SUPER + mouse:272", hl.dsp.exec_cmd("hyprshot -m region"))
-hl.bind("SUPER + mouse:273", hl.dsp.exec_cmd("hyprshot -m region"))
-
 hl.bind("SUPER + mouse_down", hl.dsp.focus({workspace = "e+1"}))
 hl.bind("SUPER + mouse_up", hl.dsp.focus({workspace = "e-1"}))
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), {mouse = true})

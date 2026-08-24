@@ -3,6 +3,7 @@ require("modules/monitor")
 require("modules/keybinds")
 require("modules/input")
 require("modules/environment")
+require("modules/appearance")
 
 hl.on("hyprland.start", function ()
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
